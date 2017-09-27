@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>insert record</title>
+	</head>
+	<body>
+		<center>
+			<table border="4">
+				<td colspan="2"><center><strong>Django data form</strong></center></td>
+				<form method="post">
+					{% csrf_token %}
+					{{form}}
+					<td colspan="2">
+						<center>
+							<input type="submit" name="submit">
+						</center>
+					</td>					
+				</form>
+			</table>
+		</center>
+	</body>
+</html>
